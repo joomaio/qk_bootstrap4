@@ -1,0 +1,9 @@
+/**
+ * @copyright	Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+/* Start Common Styles */
+.page-header h1, .page-header h2{
+	font-size: 11px;
+}

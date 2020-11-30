@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site" method="upgrade">
+	<name>bootstrap4</name>
+	<version>0.4</version>
+	<creationDate>11/09/2019</creationDate>
+	<author>Joomaio inc.</author>
+	<authorEmail>product@joomaio.com</authorEmail>
+	<copyright>Copyright (C) 2005 - 2019 Open Source Matters, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>TPL_BOOTSTRAP4_XML_DESCRIPTION</description>
+	<scriptfile>installer.php</scriptfile>
+	<updateservers>
+		<server type="extension" name="tpl_bootstrap4" priority="1">http://www.update.joomaio.org/tpl_bootstrap4/tpl_bootstrap4_update.xml</server>
+	</updateservers>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>installer.php</filename>
+		<filename>helper.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>language</folder>
+		<folder>structure</folder>
+	</files>
+	<positions>
+		<position>menu</position>
+		<position>search</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>search-error</position>
+		<position>left</position>
+		<position>right</position>
+		<position>footer</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_bootstrap4.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_bootstrap4.sys.ini</language>
+	</languages>
+	<media folder="media" destination="tpl_bootstrap4">
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>fonts</folder>
+	</media>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				
+				<field 
+					name="logoFile" 
+					type="media" 
+					label="TPL_BOOTSTRAP4_LOGO_LABEL"
+					description="TPL_BOOTSTRAP4_LOGO_DESC" 
+					class="" 
+					default=""
+				/>
+
+				<field 
+					name="sitetitle"  
+					type="text" 
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					default=""
+					filter="string" 
+				/>
+
+				<field 
+					name="sitedescription"  
+					type="text" 
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					default=""
+					filter="string" 
+				/>
+
+				<field 
+					name="fluidContainer"
+					type="radio"
+					label="TPL_BOOTSTRAP4_FLUID_LABEL"
+					description="TPL_BOOTSTRAP4_FLUID_DESC"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="1">TPL_BOOTSTRAP4_FLUID</option>
+					<option value="0">TPL_BOOTSTRAP4_STATIC</option>
+				</field>
+								
+				<field 
+					name="selectstructure"
+					type="list"
+					label="TPL_BOOTSTRAP4_SELECT_STRUCTURE_LABEL"
+					description="TPL_BOOTSTRAP4_SELECT_STRUCTURE_DESC"
+					class="listlayout"
+					default="0"
+					>
+					<option value="0">TPL_BOOTSTRAP4_DEFAULT_LAYOUT</option>
+					<option value="1">TPL_BOOTSTRAP4_STRUCTURE_8_4</option>
+					<option value="2">TPL_BOOTSTRAP4_LEFT_SIDEBAR</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
